@@ -1,0 +1,45 @@
+{
+    "projects": {
+        "Engine": {
+            "dependencies": [
+                "Render"
+            ],
+            "dependents": [
+                "ShootEmUp"
+            ],
+            "guid": "59E23ECC-4F5E-41A7-18FA-79EA0E142996",
+            "lib": true,
+            "pch": true,
+            "vcpkg": true,
+            "window": false
+        },
+        "Render": {
+            "dependencies": [],
+            "dependents": [
+                "Engine",
+                "ShootEmUp"
+            ],
+            "guid": "5D303929-68E3-5AF6-5C6D-7EA95B011802",
+            "lib": true,
+            "pch": true,
+            "vcpkg": true,
+            "window": false
+        },
+        "ShootEmUp": {
+            "dependencies": [
+                "Engine",
+                "Render"
+            ],
+            "dependents": [],
+            "guid": "25E766C8-58BB-7151-77AE-61E922363F87",
+            "lib": false,
+            "pch": false,
+            "vcpkg": true,
+            "window": true
+        }
+    },
+    "solution_guid": "58982E37-4765-2BED-338E-6CB2421E2C7D",
+    "solution_name": "ShootEmUp",
+    "startup_project": "ShootEmUp",
+    "version": "1.17.2"
+}
